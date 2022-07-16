@@ -64,7 +64,24 @@
                     </dependency>
                 </dependencies>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M6</version>
+                <configuration>
+                    <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                        <checkModificationExclude>**</checkModificationExclude>
+                    </checkModificationExcludes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:oscharko/Spring-Pet-Clinic-Monolith-in-Kotlin.git
+        </developerConnection>
+    </scm>
 </project>
