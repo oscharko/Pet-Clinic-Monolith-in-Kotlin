@@ -14,7 +14,7 @@
     </modules>
     <groupId>de.oscharko</groupId>
     <artifactId>Spring-Pet-Clinic-Monolith-in-Kotlin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Spring-Pet-Clinic-Monolith-in-Kotlin</name>
     <description>Spring-Pet-Clinic-Monolith-in-Kotlin</description>
     <properties>
@@ -80,5 +80,6 @@
     <scm>
         <developerConnection>scm:git:git@github.com:oscharko/Spring-Pet-Clinic-Monolith-in-Kotlin.git
         </developerConnection>
+    <tag>HEAD</tag>
   </scm>
 </project>
