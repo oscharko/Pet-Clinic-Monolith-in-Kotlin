@@ -2,8 +2,8 @@
 # Project Specific
 ######################
 /build/www/**
-/src/test/javascript/coverage/
-/src/test/javascript/PhantomJS*/
+/Pet-Clinic-Web/src/test/javascript/coverage/
+/Pet-Clinic-Web/src/test/javascript/PhantomJS*/
 
 ######################
 # Node
