@@ -1,1 +1,1 @@
-# Pet-Clinic-Monolith-in-Kotlin
+# Spring-Pet-Clinic-Monolith-in-Kotlin
