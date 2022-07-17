@@ -1,10 +1,10 @@
-package de.oscharko.springpetclinicmonolithinkotlin
+package de.oscharko.petclinicweb
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class SpringPetClinicMonolithInKotlinApplicationTests {
+class PetClinicWebApplicationTests {
 
 	@Test
 	fun contextLoads() {

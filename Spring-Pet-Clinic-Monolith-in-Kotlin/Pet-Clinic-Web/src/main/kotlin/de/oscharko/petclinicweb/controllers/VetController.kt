@@ -1,4 +1,4 @@
-package de.oscharko.springpetclinicmonolithinkotlin.controllers
+package de.oscharko.petclinicweb.controllers
 
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping
  * --------------------
  */
 @Controller
-class IndexController {
+class VetController {
 
-    @RequestMapping("", "/", "/index", "/index.html")
-    fun index(): String? {
-        return "index"
+    @RequestMapping("/vets", "/vets/index", "/vets/index.html")
+    fun listVets(): String? {
+        return "vets/index"
     }
 }

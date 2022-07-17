@@ -1,8 +1,7 @@
-package de.oscharko.springpetclinicmonolithinkotlin.controllers
+package de.oscharko.petclinicweb.controllers
 
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
-
 
 /**
  * Created by oscharko on 17.07.22 😎
@@ -12,11 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.controllers
  * --------------------
  */
+@RequestMapping("/owners")
 @Controller
-class VetController {
+class OwnerController {
 
-    @RequestMapping("/vets", "/vets/index", "/vets/index.html")
-    fun listVets(): String? {
-        return "vets/index"
+    @RequestMapping("", "/", "/index", "/index.html")
+    fun listOwner(): String? {
+        return "owners/index"
     }
 }
