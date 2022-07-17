@@ -1,4 +1,4 @@
-package de.oscharko.petclinicdata.services.map;
+package de.oscharko.springpetclinicmonolithinkotlin.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -10,7 +10,7 @@ import java.util.Set;
  * Check out -> www.oscharko.de
  * --------------------
  * Inside the module  - Pet-Clinic-Data
- * Inside the package - de.oscharko.petclinicdata.services.map
+ * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services.map
  * --------------------
  */
 public abstract class AbstractMapService<T, ID> {

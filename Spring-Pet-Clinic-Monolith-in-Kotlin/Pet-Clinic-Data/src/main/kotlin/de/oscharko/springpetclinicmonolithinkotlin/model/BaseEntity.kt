@@ -1,4 +1,4 @@
-package de.oscharko.petclinicdata.model
+package de.oscharko.springpetclinicmonolithinkotlin.model
 
 import java.io.Serializable
 
@@ -7,7 +7,7 @@ import java.io.Serializable
  * Check out -> www.oscharko.de
  * --------------------
  * Inside the module  - Pet-Clinic-Data
- * Inside the package - de.oscharko.petclinicdata.model
+ * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.model
  * --------------------
  */
 open class BaseEntity : Serializable {

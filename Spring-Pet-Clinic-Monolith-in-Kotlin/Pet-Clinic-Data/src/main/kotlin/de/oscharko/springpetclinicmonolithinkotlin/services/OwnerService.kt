@@ -1,6 +1,6 @@
-package de.oscharko.petclinicdata.services
+package de.oscharko.springpetclinicmonolithinkotlin.services
 
-import de.oscharko.petclinicdata.model.Owner
+import de.oscharko.springpetclinicmonolithinkotlin.model.Owner
 
 
 /**
@@ -8,7 +8,7 @@ import de.oscharko.petclinicdata.model.Owner
  * Check out -> www.oscharko.de
  * --------------------
  * Inside the module  - Pet-Clinic-Data
- * Inside the package - de.oscharko.petclinicdata.services
+ * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services
  * --------------------
  */
 interface OwnerService : CrudService<Owner, Long> {

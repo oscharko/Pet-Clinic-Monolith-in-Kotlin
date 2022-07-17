@@ -1,7 +1,7 @@
-package de.oscharko.petclinicdata.services.map
+package de.oscharko.springpetclinicmonolithinkotlin.services.map
 
-import de.oscharko.petclinicdata.model.Pet
-import de.oscharko.petclinicdata.services.CrudService
+import de.oscharko.springpetclinicmonolithinkotlin.model.Pet
+import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
 
 
 /**
@@ -9,7 +9,7 @@ import de.oscharko.petclinicdata.services.CrudService
  * Check out -> www.oscharko.de
  * --------------------
  * Inside the module  - Pet-Clinic-Data
- * Inside the package - de.oscharko.petclinicdata.services.map
+ * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services.map
  * --------------------
  */
 class PetServiceMap : AbstractMapService<Pet, Long>(), CrudService<Pet, Long> {
