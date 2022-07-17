@@ -10,6 +10,14 @@ import java.io.Serializable
  * Inside the package - de.oscharko.petclinicdata.model
  * --------------------
  */
-open class BaseEntity() : Serializable {
-    constructor(id: Long) : this()
+open class BaseEntity : Serializable {
+
+    private var id: Long? = null
+    open fun getId(): Long? {
+        return id
+    }
+
+    open fun setId(id: Long) {
+        this.id = id
+    }
 }
