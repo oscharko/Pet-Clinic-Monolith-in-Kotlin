@@ -2,6 +2,7 @@ package de.oscharko.springpetclinicmonolithinkotlin.services.map
 
 import de.oscharko.springpetclinicmonolithinkotlin.model.Pet
 import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
+import org.springframework.stereotype.Service
 
 
 /**
@@ -12,6 +13,7 @@ import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services.map
  * --------------------
  */
+@Service
 class PetServiceMap : AbstractMapService<Pet, Long>(), CrudService<Pet, Long> {
     override fun findAll(): Set<Pet> {
         return super.findAll()
@@ -22,7 +24,7 @@ class PetServiceMap : AbstractMapService<Pet, Long>(), CrudService<Pet, Long> {
     }
 
     override fun save(`object`: Pet): Pet {
-        return super.save(`object`.getId(), `object`)
+        return super.save(`object`)
     }
 
     override fun delete(`object`: Pet) {

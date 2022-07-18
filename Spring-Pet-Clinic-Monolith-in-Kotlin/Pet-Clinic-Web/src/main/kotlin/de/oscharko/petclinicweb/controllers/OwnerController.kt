@@ -1,6 +1,8 @@
 package de.oscharko.petclinicweb.controllers
 
+import de.oscharko.springpetclinicmonolithinkotlin.services.OwnerService
 import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.RequestMapping
 
 /**
@@ -13,10 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping
  */
 @RequestMapping("/owners")
 @Controller
-class OwnerController {
+class OwnerController(val ownerService: OwnerService) {
+
 
     @RequestMapping("", "/", "/index", "/index.html")
-    fun listOwner(): String? {
+    fun listOwners(model: Model): String? {
+        println(this.ownerService.findAll().size)
+        model.addAttribute("owners", ownerService.findAll())
         return "owners/index"
     }
 }

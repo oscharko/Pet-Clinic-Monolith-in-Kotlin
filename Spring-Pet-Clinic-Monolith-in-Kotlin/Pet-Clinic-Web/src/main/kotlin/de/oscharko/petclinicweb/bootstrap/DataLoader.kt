@@ -42,7 +42,7 @@ class DataLoader : CommandLineRunner {
 
         ownerService.save(owner2)
 
-        println("Loaded Owners...")
+        println("Loaded Owners..." + ownerService.findAll().size)
 
         val vet1 = Vet()
         vet1.setFirstName("Sam")

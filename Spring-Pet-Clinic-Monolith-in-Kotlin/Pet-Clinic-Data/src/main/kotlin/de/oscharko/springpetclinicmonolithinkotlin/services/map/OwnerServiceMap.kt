@@ -2,6 +2,7 @@ package de.oscharko.springpetclinicmonolithinkotlin.services.map
 
 import de.oscharko.springpetclinicmonolithinkotlin.model.Owner
 import de.oscharko.springpetclinicmonolithinkotlin.services.OwnerService
+import org.springframework.stereotype.Service
 
 
 /**
@@ -12,6 +13,7 @@ import de.oscharko.springpetclinicmonolithinkotlin.services.OwnerService
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services.map
  * --------------------
  */
+@Service
 class OwnerServiceMap : AbstractMapService<Owner, Long>(), OwnerService {
 
     override fun findAll(): Set<Owner> {
@@ -23,7 +25,7 @@ class OwnerServiceMap : AbstractMapService<Owner, Long>(), OwnerService {
     }
 
     override fun save(`object`: Owner): Owner {
-        return super.save(`object`.getId(), `object`)
+        return super.save(`object`)
     }
 
     override fun delete(`object`: Owner) {
