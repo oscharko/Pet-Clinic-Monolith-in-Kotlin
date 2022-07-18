@@ -8,5 +8,5 @@ package de.oscharko.springpetclinicmonolithinkotlin.model
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.model
  * --------------------
  */
-class Owner() : BaseEntity() {
+class Owner : Person() {
 }

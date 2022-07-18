@@ -1,7 +1,7 @@
 package de.oscharko.springpetclinicmonolithinkotlin.services.map
 
 import de.oscharko.springpetclinicmonolithinkotlin.model.Owner
-import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
+import de.oscharko.springpetclinicmonolithinkotlin.services.OwnerService
 
 
 /**
@@ -12,7 +12,8 @@ import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services.map
  * --------------------
  */
-class OwnerServiceMap : AbstractMapService<Owner, Long>(), CrudService<Owner, Long> {
+class OwnerServiceMap : AbstractMapService<Owner, Long>(), OwnerService {
+
     override fun findAll(): Set<Owner> {
         return super.findAll()
     }
@@ -31,5 +32,9 @@ class OwnerServiceMap : AbstractMapService<Owner, Long>(), CrudService<Owner, Lo
 
     override fun deleteById(id: Long) {
         super.deleteById(id)
+    }
+
+    override fun findByLastName(lastName: String): Owner? {
+        return null
     }
 }

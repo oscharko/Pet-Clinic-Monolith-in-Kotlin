@@ -1,7 +1,7 @@
 package de.oscharko.springpetclinicmonolithinkotlin.services.map
 
 import de.oscharko.springpetclinicmonolithinkotlin.model.Vet
-import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
+import de.oscharko.springpetclinicmonolithinkotlin.services.VetService
 
 
 /**
@@ -12,7 +12,7 @@ import de.oscharko.springpetclinicmonolithinkotlin.services.CrudService
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.services.map
  * --------------------
  */
-class VetServiceMap : AbstractMapService<Vet, Long>(), CrudService<Vet, Long> {
+class VetServiceMap : AbstractMapService<Vet, Long>(), VetService {
     override fun findAll(): Set<Vet> {
         return super.findAll()
     }

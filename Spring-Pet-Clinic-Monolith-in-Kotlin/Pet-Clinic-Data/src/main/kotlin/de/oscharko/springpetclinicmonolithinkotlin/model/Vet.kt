@@ -8,5 +8,5 @@ package de.oscharko.springpetclinicmonolithinkotlin.model
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.model
  * --------------------
  */
-class Vet() : Person() {
+class Vet : Person() {
 }

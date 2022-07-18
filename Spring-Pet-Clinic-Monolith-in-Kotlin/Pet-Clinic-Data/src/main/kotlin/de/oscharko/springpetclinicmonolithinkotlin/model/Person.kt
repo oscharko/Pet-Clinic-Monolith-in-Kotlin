@@ -8,6 +8,24 @@ package de.oscharko.springpetclinicmonolithinkotlin.model
  * Inside the package - de.oscharko.springpetclinicmonolithinkotlin.model
  * --------------------
  */
-open class Person() : BaseEntity() {
-    constructor(firstName: String, lastName: String) : this()
+open class Person : BaseEntity() {
+
+    private var firstName: String? = null
+    private var lastName: String? = null
+
+    open fun getFirstName(): String? {
+        return firstName
+    }
+
+    open fun setFirstName(firstName: String?) {
+        this.firstName = firstName
+    }
+
+    open fun getLastName(): String? {
+        return lastName
+    }
+
+    open fun setLastName(lastName: String?) {
+        this.lastName = lastName
+    }
 }
